@@ -14,7 +14,7 @@ body{
 }
 
 .bg-img{
-    background-image: url(/images/bg.png);
+    background-image: url(./images/bg.png);
     background-size: contain;
     background-position:right;
 }

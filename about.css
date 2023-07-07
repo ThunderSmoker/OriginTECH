@@ -12,7 +12,7 @@ body {
 
 .banner {
     /* background-color: gray; */
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/images/mm.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(./images/mm.jpg);
     background-attachment: scroll;
     background-color: #959595;
     background-size: contain;
@@ -43,7 +43,7 @@ body {
 }
 
 .vision {
-    background-image: url(/images/reshot-illustration-system-user-login-GTQRL8HFXU.jpg);
+    background-image: url(./images/reshot-illustration-system-user-login-GTQRL8HFXU.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: white;
