@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f1ff;
+}
+
+.banner {
+    /* background-color: gray; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/images/mm.jpg);
+    background-attachment: scroll;
+    background-color: #959595;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    height: 4.5em;
+}
+
+
+.line {
+    width: 4em;
+    height: 2px;
+    border-width: 0;
+}
+
+.positioning {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+}
+
+.vision {
+    background-image: url(/images/reshot-illustration-system-user-login-GTQRL8HFXU.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: right;
+    height: 30em;
+    display: flex;
+    row-gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width:1230px) {
+    .vision {
+        background-image: none;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2em;
+        height: max-content;
+        width: 100%;
+        padding: 2em;
+    }
+
+}
+
+.v, .m {
+    background-color: #F6F6FF;
+    border-radius: 3px;
+    margin: 0 2em 0em 5em;
+    width: 48em;
+    height: 12em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.05);
+}
+
+.log {
+    margin-left: 0.4em;
+    margin-right: 1em;
+}
+
+.log2 {
+    margin: 0 1.8em 0 1em;
+}
+
+.inf {
+    margin-right: 1em;
+    padding-right: 1em;
+}
+
+
+@media(max-width:1230px) {
+    .v{
+        background-color: #F6F6FF;
+        border-radius: 4px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding: 0em;
+        margin: 0em;
+        height:max-content;
+        row-gap: 1em;
+    }
+    .m {
+        background-color: #F6F6FF;
+        border-radius: 4px;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        padding: 0em;
+        margin: 0em;
+        height: max-content;
+        row-gap: 1em;
+    }
+}
+ @media (max-width:1230px) {
+    .inf{
+        margin: 0em;
+        padding: 1em;
+    }
+    .log{
+        margin: 0em;
+        padding: 0.5em;
+    }
+    .log2{
+        margin: 0em;
+        padding: 0.5em;
+    }
+
+ }
+
+.inf03{
+    width:100%;
+}
+.info4 {
+    background-color: #f2f1ff;
+    /* background-position: left; */
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.7em;
+    text-align: justify;
+}
+
+.visi{
+    padding:0.5em 2.7em 0 2.7em;
+    width: 100%;
+}
+
+.info5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* row-gap: 1em; */
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    text-align: justify;
+    align-items: flex-start;
+    margin-right: 0em;
+}
+
+.core-values {
+    padding: 1em;
+    height: fit-content;
+    background-color: #f2f1ff;
+    box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.core-values h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: #5d4298;
+    margin: 1em 0;
+}
+
+.core-values p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    text-align: justify;
+    margin: 1em 0;
+}
+
+.heading {
+    text-align: center;
+    padding: 0.5em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #5d4298;
+    background-color: white;
+    margin: 0em 0.7em;
+    border-radius: 6px;
+    
+
+   
+}

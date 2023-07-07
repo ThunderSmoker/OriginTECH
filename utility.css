@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap');
+
+*,
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+
+.para {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/images/cont.jpg);
+    background-color: #121C25;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    /* background-size: auto 30em; */
+    background-size: contain;
+    background-position: right top;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    height: 4.5em;
+}
+
+
+
+.opportunity {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(/images/G7.2.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    height: 4.5em;
+}
+
+.banner {
+    /* background-color: gray; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/images/mm.jpg);
+    background-attachment: scroll;
+    background-color: #959595;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    height: 4.5em;
+}
+
+
+.products {
+    /* background-color: gray; */
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)), url(/images/products.jpg)  ;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    /* background-size: auto 30em; */
+    background-size: contain;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size:3em;
+    font-weight: 900;
+    height: 4.5em;
+
+}
+
+
+@media(max-width:600px){
+    .banner{
+    background-size: cover;
+      
+    }
+    .contacts{
+        background-size: cover;
+    }
+ 
+}
+
+@media(max-width:900px){
+    .products{
+    background-size: cover;
+      
+    }
+  
+ 
+}
+
+
+
+.positioning {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+}
+
+@media (max-width:600px) {
+    .positioning{
+        padding-top: 1.5em;
+    }
+}
+
+.line {
+    width: 4em;
+    height: 2px;
+    border-width: 0;
+}
+
+@media(min-width:600px) and (max-width:900px){
+    .positioning{
+    padding-top: 1em;
+      
+    }
+
+ 
+}
+
+.toggle_btn {
+    display: block;
+    position: absolute;
+    background-image: url(/images/8665130_bars_data_icon.svg);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    /* height: 64px; */
+    width: 2.5rem;
+    top: 0.9rem;
+    right: 0.6rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.toggle_btn[aria-expanded ="true"] {
+    background-image: url(/images/8666595_x_icon.png);
+}
+
+@media(min-width : 885px) {
+
+    .toggle_btn {
+        display: none;
+        height: 0;
+    }
+}
+
+
+.dropdown_menu {
+    display: none;
+    height: 0px;
+    position: absolute;
+    right: 1rem;
+    top: 3.65rem;
+    width: 300px;
+    background: rgba(0 0 0 /0.75);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    z-index: 9999;
+    padding-left: 7.5rem;
+    transition: height .9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  
+}
+
+@supports(backdrop-filter: blur(12px)) {
+    .dropdown_menu {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(12px);
+    }
+}
+
+
+.dropdown_menu[data-visible="true"]{
+    transition: height .9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 270px;
+
+}
+
+
+
+
+@media(max-width:885px) {
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width:530px) {
+    .dropdown_menu {
+       
+        padding-left: 0;
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+       align-items: center;
+
+    }
+}
+
+
+
+#scrollBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 4px;
+}
+
+#scrollBtn:hover {
+    background-color: #5d4298;
+}
